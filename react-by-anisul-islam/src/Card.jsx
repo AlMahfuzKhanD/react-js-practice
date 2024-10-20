@@ -8,15 +8,23 @@ const headingStyle = {
   fontSize:'3rem'
 }
 
-function Card() {
+const todoTitle = "Call Family"
+const todoDesc = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, quod."
+const date = new Date()
+const dateName = date.getDate()
+const monthName = date.getMonth()
+const currentYear = date.getFullYear()
+
+function Card(props) {
   const [count, setCount] = useState(0)
+  const {titleText,descText} = props;
 
   return (
     <>
       <div className='card'>
-                <h3 className='cardTitle'>Call Family</h3>
-                <p className='cardDesc'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, quod.</p>
-                <p className='cardFooter'>Al Mahfuz</p>
+                <h3 className='cardTitle'>{titleText}</h3>
+                <p className='cardDesc'>{descText}</p>
+                <p className='cardFooter'>{dateName+'/'+monthName+'/'+currentYear}</p>
             </div>
       
       

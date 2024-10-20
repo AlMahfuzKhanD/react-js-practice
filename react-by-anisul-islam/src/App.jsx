@@ -15,8 +15,8 @@ function App() {
   return (
     <>
       <h1 className='headingStyle'>Hello</h1>
-      <Card />
-      <Card />
+      <Card titleText="Call mother" descText="This is desc text 1"/>
+      <Card titleText="Call Father" descText="This is desc text 2"/>
       
     </>
   )
