@@ -14,18 +14,27 @@ export default function Fruits() {
     {
       name: "Apple",
       price: 10,
+      soldout: false,
     },
     {
       name: "Mango",
       price: 12,
+      soldout: false,
     },
     {
       name: "Banana",
       price: 5,
+      soldout: true,
     },
     {
       name: "Orrange",
       price: 7,
+      soldout: false,
+    },
+    {
+      name: "Pinapple",
+      price: 8,
+      soldout: true,
     },
   ];
   return (
@@ -36,7 +45,12 @@ export default function Fruits() {
           //     {item.name} ${item.price}
           //   </li>
 
-          <Fruit key={index} name={item.name} price={item.price} />
+          <Fruit
+            key={index}
+            name={item.name}
+            price={item.price}
+            soldout={item.soldout}
+          />
         ))}
       </ul>
     </div>
