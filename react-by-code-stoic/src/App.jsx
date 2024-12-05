@@ -18,7 +18,7 @@ function App() {
       {/* <Hello name="Mahfuz" message="Hello" seatNumbers={seatNumbers} /> */}
       <Hello person={person} />
       {/* <Hello name="Khan" message="Hi" /> */}
-      <ConditionalComponent />
+      <Fruits />
     </div>
   );
 }
