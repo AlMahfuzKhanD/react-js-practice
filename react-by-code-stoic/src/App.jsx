@@ -5,6 +5,7 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 import ConditionalComponent from "./components/ConditionalComponent";
 import Message from "./components/Message";
+import Counter from "./components/Counter";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,7 +20,7 @@ function App() {
       {/* <Hello name="Mahfuz" message="Hello" seatNumbers={seatNumbers} /> */}
       <Hello person={person} />
       {/* <Hello name="Khan" message="Hi" /> */}
-      <Message />
+      <Counter />
     </div>
   );
 }
