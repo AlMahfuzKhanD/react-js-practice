@@ -5,6 +5,10 @@ export default function Form() {
   //   function handleChange(e) {
   //     setName(e.target.value);
   //   }
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(name);
+  }
   return (
     <div>
       <form action="">
@@ -21,6 +25,7 @@ export default function Form() {
           onChange={(e) => setName({ ...name, lastName: e.target.value })}
           value={name.lastName}
         />
+        <button onClick={(e) => handleSubmit(e)}>Add</button>
       </form>
     </div>
   );
