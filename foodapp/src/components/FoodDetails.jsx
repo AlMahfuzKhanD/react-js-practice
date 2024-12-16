@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./fooddetails.module.css";
+import ItemList from "./ItemList";
 
 export default function FoodDetails({ foodId }) {
   const [food, setFood] = useState({});
@@ -54,6 +55,8 @@ export default function FoodDetails({ foodId }) {
             <strong>$ {food.pricePerServing / 100} serving</strong>
           </span>
         </div>
+        <h2>Ingredients</h2>
+        <ItemList food={food} isLoading={isLoading} />
         <h2>Instructions</h2>
         <div className={styles.recipeInstructions}>
           <ol>
