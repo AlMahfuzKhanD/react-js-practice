@@ -10,6 +10,7 @@ import Form from "./components/Form";
 import UseReducer from "./components/UseReducer";
 import UseReducerObject from "./components/UseReducerObject";
 import UseComplexObjectReducer from "./components/UseComplexObjectReducer";
+import ReducerBankAccount from "./components/ReducerBankAccount";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,12 +23,14 @@ function App() {
   return (
     <div className="App">
       {/* <Hello name="Mahfuz" message="Hello" seatNumbers={seatNumbers} /> */}
-      <Hello person={person} />
+      {/* <Hello person={person} /> */}
       {/* <Hello name="Khan" message="Hi" /> */}
       {/* <Form /> */}
-      <UseReducer />
+      {/* <UseReducer />
       <UseReducerObject />
-      <UseComplexObjectReducer />
+      <UseComplexObjectReducer /> */}
+      {/* <ReducerBankAccount /> */}
+      This is the app Page
     </div>
   );
 }
