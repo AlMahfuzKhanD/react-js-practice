@@ -9,6 +9,7 @@ import Counter from "./components/Counter";
 import Form from "./components/Form";
 import UseReducer from "./components/UseReducer";
 import UseReducerObject from "./components/UseReducerObject";
+import UseComplexObjectReducer from "./components/UseComplexObjectReducer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,6 +27,7 @@ function App() {
       {/* <Form /> */}
       <UseReducer />
       <UseReducerObject />
+      <UseComplexObjectReducer />
     </div>
   );
 }
